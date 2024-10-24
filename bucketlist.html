@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery DOM Manipulation Example</title>
+    <style>
+      h5 {
+        padding-left: 20px;
+      }
+      li > button {
+        padding-right: 20px;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    </style>
+    <!-- link for bootstrap icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body class="bg-emerald-200">
+    <!-- heading and search bar code -->
+    <div class="text-center mt-8">
+      <h1 class="text-3xl font-bold m-2 underline">Dream TO DO LIST</h1>
+      <input
+        id="search"
+        type="text"
+        name="search"
+        placeholder="search"
+        value=""
+        class="border border-black m-2 p-1 bg-emerald-300"
+      />
+    </div>
+
+    <div class="h-[400px]">
+      <!-- Adventures section  -->
+      <div id="bucketlist" class="flex flex-row flex-wrap justify-around">
+        <ul
+          id="adventure"
+          class="w-[40%] h-[150px] rounded shadow-md text-center m-8 bg-emerald-300"
+        >
+          <h3 class="text-2xl font-semibold underline">Adventures</h3>
+          <li>
+            <h5 class="dhr">Sky Diving</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+          <li>
+            <h5 class="dhr">Bungee Jumping</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+        </ul>
+
+        <!-- Travel destinations section  -->
+        <ul
+          id="travel"
+          class="w-[40%] h-[150px] rounded shadow-md text-center m-8 bg-emerald-300"
+        >
+          <h3 class="text-2xl font-semibold underline">Travel destinations</h3>
+          <li>
+            <h5 class="dhr">Kashmir</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+          <li>
+            <h5 class="dhr">Bangkok</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+        </ul>
+
+        <!-- Foods to try section  -->
+        <ul
+          id="food"
+          class="w-[40%] h-[150px] rounded shadow-md text-center m-8 bg-emerald-300"
+        >
+          <h3 class="text-2xl font-semibold underline">Foods to try</h3>
+          <li>
+            <h5 class="dhr">Tom Yum soup</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+          <li>
+            <h5 class="dhr">Red Wine</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+        </ul>
+
+        <!-- Skills to learn -->
+        <ul
+          id="skill"
+          class="w-[40%] h-[150px] rounded shadow-md text-center m-8 bg-emerald-300"
+        >
+          <h3 class="text-2xl font-semibold underline">Skills to learn</h3>
+          <li>
+            <h5 class="dhr">React Js</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+          <li>
+            <h5 class="dhr">NODE JS</h5>
+            <button type="button"><i class="bi bi-trash"></i></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- hide list checkbox  -->
+    <div class="text-center">
+      <div class="text-center my-6">
+        <input
+          id="checkbtn"
+          type="checkbox"
+          name="hide"
+          class="border border-black m-2 p-1 bg-emerald-300"
+        />
+        <label id="label1" for="checkbtn">Hide your Bucket list</label>
+      </div>
+
+      <!-- add textinput, dropdown and add button   -->
+      <input
+        id="enter"
+        placeholder="add activity here"
+        value=""
+        class="border text-black border-black m-2 p-1 bg-emerald-300"
+      />
+      <select id="selectbox" class="border border-black m-2 p-1 bg-emerald-300">
+        <option value="adventure">Adventures</option>
+        <option value="travel">Travel destinations</option>
+        <option value="food">Foods to try</option>
+        <option value="skill">Skills to learn</option>
+      </select>
+      <button
+        id="btn-1"
+        type="button"
+        class="bg-emerald-300 border border-black m-2 px-4 py-1"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jquery link  -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- js file link  -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
